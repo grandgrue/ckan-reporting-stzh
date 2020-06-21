@@ -34,7 +34,7 @@ The structure of org-mapping.csv is as follows
 | S03 | "Stadtkanzlei, Stadt Uster" |
 
 ### Missing Mappings
-A missing mapping is indicated with an error-message and the corresponding dataset is listed in a file called error_missing-mapping.csv
+A missing mapping is indicated with an error-message and the corresponding dataset is listed in a file called error_missing-mapping.csv. 
 In that case, create a new entry in org-mapping.csv and rerun the script. You can use the mode=3 switch (to be modified in the code of ckan-reporting-stzh.py) to skip the data retrieval part.
 
 Please create a pull request for your changes to org-mapping.csv.
