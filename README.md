@@ -1,5 +1,6 @@
 # ckan-reporting-stzh
-Creates a list of datasets per organizational unit based on the ckan-api and visualizes it
+Creates a list of datasets per organizational unit based on the ckan-api and visualizes it.
+Download this repository and run execute ckan-reporting-stzh.py to create the report.
 
 ## Input
 
