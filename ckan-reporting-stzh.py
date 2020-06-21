@@ -17,7 +17,7 @@ import datetime
 # 1 = normal mode - with hundrets of ckan-api calls, will take a few minutes
 # 2 = test mode - limited to 20 api-calls
 # 3 = mapping mode - no api calls, just the fast mapping and image creation 
-mode = 1;
+mode = 1
 
 # general settings
 today = datetime.date.today()
@@ -36,7 +36,7 @@ excel_out = "Report OGD Datensätze nach Organisationseinheit.xlsx"
 
 # image settings
 image_in = "stzh-org-template.png"
-image_out = "Report OGD Datensätze nach Departement und Dienstabteilung " + today.strftime("%Y-%m-%d") + ".png"
+image_out = "Report OGD Datensätze nach Departement und Dienstabteilung.png"
 box_width = 160
 padding_top_dept = -50
 padding_right_dept = 5
@@ -76,8 +76,10 @@ if mode <= 2:
         if mode==2 and index == 20:
             break   
 
-    # Convert list_pkg to dataframe for further processing (merging with mapping)
+    # Convert list_pkg to dataframe for further processing (merging with mappings)
     data_list = pd.DataFrame(list_pkg, columns = ['name' , 'author']) 
+    
+    # Save list of datasets if mapping mode is used later
     data_list.to_csv(pkgcsv)
 
 # PHASE 2: MAP AUTHOR OF DATASETS TO ORGANIZATIONAL UNITS
