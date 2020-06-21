@@ -13,9 +13,9 @@ For the primary mapping the file organizations.csv is used. If the author of a d
 
 The structure of organizations.csv is as follows
 
-| Nr | Organisation | Dept | DA | xPixel | yPixel |
-| :- | :----------- | :--- | :- | :----- | :----- |
-| A | Stadt Zürich | Präsidialdepartement | Alle | 12 | 282 |
+| Nr  | Organisation | Dept | DA | xPixel | yPixel |
+| :-- | :----------- | :--- | :- | :----- | :----- |
+| A   | Stadt Zürich | Präsidialdepartement | Alle | 12 | 282 |
 | A01 | Stadt Zürich | Präsidialdepartement | Departementssekretariat PRD | 12 | 333 |
 | A02 | Stadt Zürich | Präsidialdepartement | Bevölkerungsamt | 12 | 385 |
 | A03 | Stadt Zürich | Präsidialdepartement | Statistik Stadt Zürich | 12 | 436 |
