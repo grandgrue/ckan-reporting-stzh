@@ -1,0 +1,88 @@
+Nr,Organisation,Dept,DA,xPixel,yPixel
+A,Stadt Zürich,Präsidialdepartement,Alle,12,282
+A01,Stadt Zürich,Präsidialdepartement,Departementssekretariat PRD,12,333
+A02,Stadt Zürich,Präsidialdepartement,Bevölkerungsamt,12,385
+A03,Stadt Zürich,Präsidialdepartement,Statistik Stadt Zürich,12,436
+A04,Stadt Zürich,Präsidialdepartement,Stadtarchiv Zürich,12,485
+A05,Stadt Zürich,Präsidialdepartement,Museum Rietberg,12,537
+A06,Stadt Zürich,Präsidialdepartement,Kultur,12,587
+A07,Stadt Zürich,Präsidialdepartement,Stadtentwicklung,12,638
+A08,Stadt Zürich,Präsidialdepartement,Projektstab Stadtrat,12,689
+A09,Stadt Zürich,Präsidialdepartement,Fachstelle für Gleichstellung,12,741
+A10,Stadt Zürich,Präsidialdepartement,Stadtammann- und Betreibungsämter,12,793
+A11,Stadt Zürich,Präsidialdepartement,Friedensrichterinnen- und Friedensrichterämter,12,844
+B,Stadt Zürich,Finanzdepartement,Alle,188,282
+B01,Stadt Zürich,Finanzdepartement,Departementssekretariat,188,333
+B02,Stadt Zürich,Finanzdepartement,Finanzverwaltung,188,385
+B03,Stadt Zürich,Finanzdepartement,Liegenschaften,188,436
+B04,Stadt Zürich,Finanzdepartement,Steueramt,188,485
+B05,Stadt Zürich,Finanzdepartement,Human Resources Management,188,537
+B06,Stadt Zürich,Finanzdepartement,Organisation und Informatik,188,587
+B07,Stadt Zürich,Finanzdepartement,Stiftung Wohnungen für kinderreiche Familien,188,638
+B08,Stadt Zürich,Finanzdepartement,Stiftung für bezahlbare und ökologische Wohnungen,188,689
+B09,Stadt Zürich,Finanzdepartement,Unfallversicherung Stadt Zürich,188,741
+B10,Stadt Zürich,Finanzdepartement,Kongresshaus-Stiftung Zürich,188,793
+C,Stadt Zürich,Sicherheitsdepartement,Alle,366,282
+C01,Stadt Zürich,Sicherheitsdepartement,Departementssekretariat,366,333
+C02,Stadt Zürich,Sicherheitsdepartement,Stadtpolizei,366,385
+C03,Stadt Zürich,Sicherheitsdepartement,Schutz und Rettung Zürich,366,436
+C04,Stadt Zürich,Sicherheitsdepartement,Dienstabteilung Verkehr,366,485
+C05,Stadt Zürich,Sicherheitsdepartement,Stadtrichteramt,366,537
+D,Stadt Zürich,Gesundheits- und Umweltdepartement,Alle,552,282
+D01,Stadt Zürich,Gesundheits- und Umweltdepartement,Departementssekretariat,552,333
+D02,Stadt Zürich,Gesundheits- und Umweltdepartement,Stadtspital Waid,552,385
+D03,Stadt Zürich,Gesundheits- und Umweltdepartement,Stadtspital Triemli,552,436
+D04,Stadt Zürich,Gesundheits- und Umweltdepartement,Pflegezentren der Stadt Zürich,552,485
+D05,Stadt Zürich,Gesundheits- und Umweltdepartement,Städtische Gesundheitsdienste,552,537
+D06,Stadt Zürich,Gesundheits- und Umweltdepartement,Alterszentren,552,587
+D07,Stadt Zürich,Gesundheits- und Umweltdepartement,Umwelt- und Gesundheitsschutz,552,638
+D08,Stadt Zürich,Gesundheits- und Umweltdepartement,Stiftung Alterswohnungen Stadt Zürich,552,689
+E,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Alle,728,282
+E01,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Departementssekretariat,728,333
+E02,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Tiefbauamt,728,385
+E03,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Entsorgung + Recycling Zürich,728,436
+E04,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Geomatik + Vermessung,728,485
+E05,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Grün Stadt Zürich,728,537
+F,Stadt Zürich,Hochbaudepartement,Alle,905,282
+F01,Stadt Zürich,Hochbaudepartement,Departementssekretariat,905,333
+F02,Stadt Zürich,Hochbaudepartement,Amt für Städtebau,905,385
+F03,Stadt Zürich,Hochbaudepartement,Amt für Hochbauten,905,436
+F04,Stadt Zürich,Hochbaudepartement,Immobilien,905,485
+F05,Stadt Zürich,Hochbaudepartement,Amt für Baubewilligungen,905,537
+G,Stadt Zürich,Departement der Industriellen Betriebe,Alle,1083,282
+G01,Stadt Zürich,Departement der Industriellen Betriebe,Departementssekretariat,1083,333
+G02,Stadt Zürich,Departement der Industriellen Betriebe,Wasserversorgung,1083,385
+G03,Stadt Zürich,Departement der Industriellen Betriebe,Elektrizitätswerk der Stadt Zürich,1083,436
+G04,Stadt Zürich,Departement der Industriellen Betriebe,Verkehrsbetriebe Zürich,1083,485
+G05,Stadt Zürich,Departement der Industriellen Betriebe,Energiebeauftragte/Energiebeauftragter,1083,537
+G06,Stadt Zürich,Departement der Industriellen Betriebe,Stiftung Behinderten-Transporte Zürich,1083,587
+H,Stadt Zürich,Schul- und Sportdepartement,Alle,1260,282
+H01,Stadt Zürich,Schul- und Sportdepartement,Departementssekretariat,1260,333
+H02,Stadt Zürich,Schul- und Sportdepartement,Schulamt,1260,385
+H03,Stadt Zürich,Schul- und Sportdepartement,Schulgesundheitsdienste,1260,436
+H04,Stadt Zürich,Schul- und Sportdepartement,Sportamt,1260,485
+H05,Stadt Zürich,Schul- und Sportdepartement,Fachschule Viventa,1260,537
+H06,Stadt Zürich,Schul- und Sportdepartement,Musikschule Konservatorium Zürich,1260,587
+I,Stadt Zürich,Sozialdepartement,Alle,1438,282
+I01,Stadt Zürich,Sozialdepartement,Departementssekretariat,1438,333
+I02,Stadt Zürich,Sozialdepartement,Support Sozialdepartement,1438,385
+I03,Stadt Zürich,Sozialdepartement,Laufbahnzentrum,1438,436
+I04,Stadt Zürich,Sozialdepartement,Soziale Einrichtungen und Betriebe,1438,485
+I05,Stadt Zürich,Sozialdepartement,Amt für Zusatzleistungen zur AHV/IV,1438,537
+I06,Stadt Zürich,Sozialdepartement,Soziale Dienste,1438,587
+I07,Stadt Zürich,Sozialdepartement,Kindes- und Erwachsenenschutzbehörde,1438,638
+I08,Stadt Zürich,Sozialdepartement,Asylorganisation der Stadt Zürich,1438,689
+J,Stadt Zürich,Allgemeine Verwaltung,Alle,-100,-100
+J01,Stadt Zürich,Allgemeine Verwaltung,Stadtkanzlei,-100,-100
+J02,Stadt Zürich,Allgemeine Verwaltung,Rechtskonsulent,-100,-100
+J03,Stadt Zürich,Allgemeine Verwaltung,Datenschutzstelle,-100,-100
+J04,Stadt Zürich,Allgemeine Verwaltung,Ombudsstelle,-100,-100
+J05,Stadt Zürich,Allgemeine Verwaltung,Finanzkontrolle-100,-100
+J06,Stadt Zürich,Allgemeine Verwaltung,Sozialbehörde,-100,-100
+J07,Stadt Zürich,Allgemeine Verwaltung,Gemeinderat der Stadt Zürich,-100,-100
+S,Ausserstädtische,Alle,Alle,-100,-100
+S01,Ausserstädtische,Bund,Alle,-100,-100
+S02,Ausserstädtische,Stiftungen,Alle,-100,-100
+S03,Ausserstädtische,Gemeinde,Alle,-100,-100
+S04,Ausserstädtische,Kanton,Alle,-100,-100
+S05,Ausserstädtische,Institutionen,Alle,-100,-100
