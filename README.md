@@ -37,6 +37,8 @@ The structure of org-mapping.csv is as follows
 A missing mapping is indicated with an error-message and the corresponding dataset is listed in a file called error_missing-mapping.csv
 In that case, create a new entry in org-mapping.csv and rerun the script. You can use the mode=3 switch (to be modified in the code of ckan-reporting-stzh.py) to skip the data retrieval part.
 
+Please create a pull request for your changes to org-mapping.csv.
+
 ## Output
 
 A new report image named "Report OGD Datensätze nach Departement und Dienstabteilung.png" is created based on the template image stzh-org-template.png. The sum of datasets per organizational unit is overlayed. The x and y pixel position for the overlay can be found in organizations.csv
