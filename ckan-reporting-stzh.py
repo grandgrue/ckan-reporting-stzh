@@ -67,9 +67,10 @@ if mode <= 2:
             if (data["result"]["type"]=="dataset") & (data["result"]["state"]=="active"):
                 pkg_name = data["result"]["name"]
                 pkg_author = data["result"]["author"]
+                pkg_title = data["result"]["title"]
                 
                 # add relevant attributes to a list
-                element_list_pkg = [pkg_name, pkg_author]
+                element_list_pkg = [pkg_name, pkg_author, pkg_title]
                 list_pkg.append(element_list_pkg)
             
         # for testing purposes we terminate the loop after 10 lines
@@ -77,7 +78,7 @@ if mode <= 2:
             break   
 
     # Convert list_pkg to dataframe for further processing (merging with mappings)
-    data_list = pd.DataFrame(list_pkg, columns = ['name' , 'author']) 
+    data_list = pd.DataFrame(list_pkg, columns = ['name' , 'author', 'title']) 
     
     # Save list of datasets if mapping mode is used later
     data_list.to_csv(pkgcsv)
@@ -125,7 +126,7 @@ print(message)
  
 # PHASE 3: PREPARE DATA FOR REPORTING    
 # Export most imprtant fields do excel for external use
-data_excel_prep = data_list_org2[["name", "author", "nrkey"]].copy()
+data_excel_prep = data_list_org2[["name", "author", "title", "nrkey"]].copy()
 data_excel_prep.rename(columns={'nrkey': 'Nr'}, inplace=True)
 data_org_name = data_org[["Nr", "Organisation", "Dept", "DA"]]
 data_excel_report = pd.merge(data_excel_prep, data_org_name, on='Nr', how='left')
