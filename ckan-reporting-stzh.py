@@ -13,22 +13,14 @@ from PIL import ImageFont
 from PIL import ImageDraw
 import datetime
 
-# Execution mode
-# 1 = normal mode - with hundrets of ckan-api calls, will take a few minutes
-# 2 = test mode - limited to 20 api-calls
-# 3 = mapping mode - no api calls, just the fast mapping and image creation 
-mode = 1
-
 # general settings
 today = datetime.date.today()
 
 # api settings
 ckanurl = "https://data.stadt-zuerich.ch"
-listapi = ckanurl + "/api/3/action/package_list"
-showapi = ckanurl + "/api/3/action/package_show?id=" 
+queryapi = ckanurl + "/api/3/action/package_search?q=&rows=999"
 
 # file settings
-pkgcsv = "pkg-list.csv"
 orgcsv = "organizations.csv"
 orgmapcsv = "org-mapping.csv"
 err_miss_map = "error_missing-mapping.csv"
@@ -47,47 +39,33 @@ font_da = ImageFont.truetype("arial.ttf", 24, encoding="unic")
 font_state = ImageFont.truetype("arial.ttf", 10, encoding="unic")
 show_error = True # default: True / set to False to remove error from image
 
-# PHASE 1: CKAN-API GET INFORMATION ABOUT ALL DATASETS
-if mode <= 2:
-    # read a list of all packages (containing datasets, showcases, harvesters, etc.) from ckan api
-    listdata = pd.read_json(listapi) 
-    
-    # prepare empty list
-    list_pkg = []
-    
-    # loop trough all the packages and send a request to the ckan api for each of them
-    # as we expect several hundrets of packages, this will take a while
-    for index, row in listdata.iterrows():
-        
-        # read package details from ckan api
-        with urllib.request.urlopen(showapi + row["result"]) as url:
-            data = json.loads(url.read().decode())
-      
-            # we are only interested in active datasets (no harvesters or showcases)      
-            if (data["result"]["type"]=="dataset") & (data["result"]["state"]=="active"):
-                pkg_name = data["result"]["name"]
-                pkg_author = data["result"]["author"]
-                pkg_title = data["result"]["title"]
-                
-                # add relevant attributes to a list
-                element_list_pkg = [pkg_name, pkg_author, pkg_title]
-                list_pkg.append(element_list_pkg)
-            
-        # for testing purposes we terminate the loop after 10 lines
-        if mode==2 and index == 20:
-            break   
 
-    # Convert list_pkg to dataframe for further processing (merging with mappings)
-    data_list = pd.DataFrame(list_pkg, columns = ['name' , 'author', 'title']) 
-    
-    # Save list of datasets if mapping mode is used later
-    data_list.to_csv(pkgcsv)
+# PHASE 1: CKAN-API GET INFORMATION ABOUT ALL DATASETS
+# query all packages
+with urllib.request.urlopen(queryapi) as url:
+        data = json.loads(url.read().decode())
+
+# prepare empty list
+list_pkg = []
+
+# loop trough all the packages 
+for dataset in data["result"]["results"]:
+  
+    #we are only interested in active datasets (no harvesters or showcases)      
+    if (dataset["type"]=="dataset") & (dataset["state"]=="active"):
+        pkg_name = dataset["name"]
+        pkg_author = dataset["author"]
+        pkg_title = dataset["title"]
+        
+        # add relevant attributes to a list
+        element_list_pkg = [pkg_name, pkg_author, pkg_title]
+        list_pkg.append(element_list_pkg)
+        
+# Convert list_pkg to dataframe for further processing (merging with mappings)
+data_list = pd.DataFrame(list_pkg, columns = ['name' , 'author', 'title']) 
+
 
 # PHASE 2: MAP AUTHOR OF DATASETS TO ORGANIZATIONAL UNITS
-# In mapping mode load the ckan dataset list from the last run
-if mode==3:
-    data_list = pd.read_csv(pkgcsv)
-
 # Load the definition of all valid organizational entities */
 data_org = pd.read_csv(orgcsv)
 data_org["orgentity"] = data_org["DA"] + ", " + data_org["Dept"]
@@ -111,7 +89,7 @@ def org_nr(nr1, nr2):
         return nr2
 data_list_org2['nrkey'] = data_list_org2.apply(lambda x: org_nr(x['Nr'],x['key']),axis=1)
 
-# Missing Mappings
+# Missing mappings
 data_err_miss = data_list_org2[data_list_org2["nrkey"].isnull()]
 
 data_err_miss.to_csv(err_miss_map)
@@ -124,6 +102,7 @@ else:
     message = "NOTE: Successfully mapped all authors"
 print(message)
  
+
 # PHASE 3: PREPARE DATA FOR REPORTING    
 # Export most imprtant fields do excel for external use
 data_excel_prep = data_list_org2[["name", "author", "title", "nrkey"]].copy()
@@ -154,9 +133,9 @@ data_pixel_dept.rename(columns={'count': 'countDept'}, inplace=True)
 data_pixel_report = pd.merge(data_pixel_dept, data_report_da, on='Nr', how='left')
 data_pixel_report.rename(columns={'count': 'countDA'}, inplace=True)
 
+
 # PHASE 4: CREATE REPORT
 # Create report by overlaying text on an existing org-chart image
- 
 img = Image.open(image_in)
 draw = ImageDraw.Draw(img)
 
