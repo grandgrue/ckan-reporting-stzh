@@ -37,6 +37,7 @@ padding_right_da = 3
 font_dept = ImageFont.truetype("arial.ttf", 28, encoding="unic")
 font_da = ImageFont.truetype("arial.ttf", 24, encoding="unic")
 font_state = ImageFont.truetype("arial.ttf", 10, encoding="unic")
+font_info = ImageFont.truetype("arial.ttf", 14, encoding="unic")
 show_error = True # default: True / set to False to remove error from image
 
 
@@ -140,6 +141,18 @@ img = Image.open(image_in)
 draw = ImageDraw.Draw(img)
 
 draw.text((1500, 870), "Stand: " + today.strftime("%d.%m.%Y"), (0, 0, 0), font=font_state)
+
+
+# count_s04 = data_pixel_report[data_pixel_report["Nr"]=="S04"]["countDA"].to_string()
+
+# draw.text((920, 700), "Departemente: ", (0, 0, 0), font=font_info)
+# draw.text((920, 720), "Allgemeine Verwaltung: ", (0, 0, 0), font=font_info)
+# draw.text((920, 740), "Institutionen: ", (0, 0, 0), font=font_info)
+# draw.text((920, 760), "Gemeinden: ", (0, 0, 0), font=font_info)
+# draw.text((920, 780), "Kanton: " + count_s04, (0, 0, 0), font=font_info)
+# draw.text((920, 800), "Bund: ", (0, 0, 0), font=font_info)
+# draw.text((920, 820), "Total: ", (0, 0, 0), font=font_info)
+
 
 if error and show_error:
     draw.text((0, 0), message, (255, 0, 0), font=font_state)
