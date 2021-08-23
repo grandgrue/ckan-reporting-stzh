@@ -22,12 +22,6 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install MS fonts
-        run: |
-          echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | debconf-set-selections
-          apt-get install -y ttf-mscorefonts-installer
-          sudo fc-cache -fv
-          sudo fc-match Arial
           
       - name: Install dependencies
         run: |
