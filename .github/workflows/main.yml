@@ -30,6 +30,7 @@ jobs:
 
       # run the scripts
       - name: Run report
+        continue-on-error: true
         run: |
           python ckan-reporting-stzh.py
           cp "Report OGD Datensätze nach Departement und Dienstabteilung.png" output
