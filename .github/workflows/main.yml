@@ -33,6 +33,7 @@ jobs:
         run: |
           python ckan-reporting-stzh.py
           cp "Report OGD Datensätze nach Departement und Dienstabteilung.png" output
+          cp ""Report OGD Datensätze nach Organisationseinheit.xlsx" output
 
           
       - uses: actions/upload-artifact@master
