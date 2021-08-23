@@ -34,7 +34,8 @@ jobs:
         run: |
           python ckan-reporting-stzh.py
           cp "Report OGD Datensätze nach Departement und Dienstabteilung.png" output
-          cp ""Report OGD Datensätze nach Organisationseinheit.xlsx" output
+          cp "Report OGD Datensätze nach Organisationseinheit.xlsx" output
+          cp error_missing-mapping.csv output
 
           
       - uses: actions/upload-artifact@master
