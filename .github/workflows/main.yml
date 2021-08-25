@@ -1,0 +1,44 @@
+name: Generate report
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run_report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      matrix:
+        python-version: [3.7]
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Create output directory
+        run: mkdir output  # create output dir
+        
+      # Setup Python
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # run the scripts
+      - name: Run report
+        continue-on-error: true
+        run: |
+          python ckan-reporting-stzh.py
+          cp "Report OGD Datensätze nach Departement und Dienstabteilung.png" output
+          cp "Report OGD Datensätze nach Organisationseinheit.xlsx" output
+          cp error_missing-mapping.csv output
+
+          
+      - uses: actions/upload-artifact@master
+        with:
+          name: output
+          path: output
