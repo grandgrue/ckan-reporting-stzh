@@ -1,6 +1,6 @@
 # ckan-reporting-stzh
 Creates a list of datasets per organizational unit based on the ckan-api and visualizes it.
-Download this repository and run execute ckan-reporting-stzh.py to create the report or use [GitHub Actions](actions/workflows/main.yml).
+Download this repository and run execute ckan-reporting-stzh.py to create the report or use [GitHub Actions](../../actions/workflows/main.yml).
 
 ![Report OGD Datensätze nach Departement und Dienstabteilung](https://user-images.githubusercontent.com/538415/132466480-2a0a3e01-60c0-478f-975c-eeb0e9b20228.png)
 
