@@ -1,77 +1,76 @@
 Nr,Organisation,Dept,DA,xPixel,yPixel
-A,Stadt Zürich,Präsidialdepartement,Alle,12,282
-A01,Stadt Zürich,Präsidialdepartement,Departementssekretariat PRD,12,333
-A02,Stadt Zürich,Präsidialdepartement,Bevölkerungsamt,12,385
-A03,Stadt Zürich,Präsidialdepartement,Statistik Stadt Zürich,12,436
-A04,Stadt Zürich,Präsidialdepartement,Stadtarchiv Zürich,12,485
+A,Stadt Zürich,Präsidialdepartement,Alle,12,252
+A01,Stadt Zürich,Präsidialdepartement,Departementssekretariat PRD,12,315
+A02,Stadt Zürich,Präsidialdepartement,Bevölkerungsamt,12,370
+A03,Stadt Zürich,Präsidialdepartement,Statistik Stadt Zürich,12,426
+A04,Stadt Zürich,Präsidialdepartement,Stadtarchiv Zürich,12,480
 A05,Stadt Zürich,Präsidialdepartement,Museum Rietberg,12,537
-A06,Stadt Zürich,Präsidialdepartement,Kultur,12,587
-A07,Stadt Zürich,Präsidialdepartement,Stadtentwicklung,12,638
-A08,Stadt Zürich,Präsidialdepartement,Projektstab Stadtrat,12,689
-A09,Stadt Zürich,Präsidialdepartement,Fachstelle für Gleichstellung,12,741
-A10,Stadt Zürich,Präsidialdepartement,Stadtammann- und Betreibungsämter,12,793
-A11,Stadt Zürich,Präsidialdepartement,Friedensrichterinnen- und Friedensrichterämter,12,844
-B,Stadt Zürich,Finanzdepartement,Alle,188,282
-B01,Stadt Zürich,Finanzdepartement,Departementssekretariat,188,333
-B02,Stadt Zürich,Finanzdepartement,Finanzverwaltung,188,385
-B03,Stadt Zürich,Finanzdepartement,Liegenschaften,188,436
-B04,Stadt Zürich,Finanzdepartement,Steueramt,188,485
+A06,Stadt Zürich,Präsidialdepartement,Kultur,12,592
+A07,Stadt Zürich,Präsidialdepartement,Stadtentwicklung,12,648
+A08,Stadt Zürich,Präsidialdepartement,Projektstab Stadtrat,12,704
+A09,Stadt Zürich,Präsidialdepartement,Fachstelle für Gleichstellung,12,756
+A10,Stadt Zürich,Präsidialdepartement,Stadtammann- und Betreibungsämter,12,813
+A11,Stadt Zürich,Präsidialdepartement,Friedensrichterinnen- und Friedensrichterämter,12,869
+B,Stadt Zürich,Finanzdepartement,Alle,188,252
+B01,Stadt Zürich,Finanzdepartement,Departementssekretariat,188,315
+B02,Stadt Zürich,Finanzdepartement,Finanzverwaltung,188,370
+B03,Stadt Zürich,Finanzdepartement,Liegenschaften,188,426
+B04,Stadt Zürich,Finanzdepartement,Steueramt,188,480
 B05,Stadt Zürich,Finanzdepartement,Human Resources Management,188,537
-B06,Stadt Zürich,Finanzdepartement,Organisation und Informatik,188,587
-B07,Stadt Zürich,Finanzdepartement,Stiftung Wohnungen für kinderreiche Familien,188,638
-B08,Stadt Zürich,Finanzdepartement,Stiftung für bezahlbare und ökologische Wohnungen,188,689
-B09,Stadt Zürich,Finanzdepartement,Unfallversicherung Stadt Zürich,188,741
-B10,Stadt Zürich,Finanzdepartement,Kongresshaus-Stiftung Zürich,188,793
-C,Stadt Zürich,Sicherheitsdepartement,Alle,366,282
-C01,Stadt Zürich,Sicherheitsdepartement,Departementssekretariat,366,333
-C02,Stadt Zürich,Sicherheitsdepartement,Stadtpolizei,366,385
-C03,Stadt Zürich,Sicherheitsdepartement,Schutz und Rettung Zürich,366,436
-C04,Stadt Zürich,Sicherheitsdepartement,Dienstabteilung Verkehr,366,485
+B06,Stadt Zürich,Finanzdepartement,Organisation und Informatik,188,592
+B07,Stadt Zürich,Finanzdepartement,Stiftung Wohnungen für kinderreiche Familien,188,648
+B08,Stadt Zürich,Finanzdepartement,Stiftung für bezahlbare und ökologische Wohnungen,188,704
+B09,Stadt Zürich,Finanzdepartement,Unfallversicherung Stadt Zürich,188,756
+B10,Stadt Zürich,Finanzdepartement,Kongresshaus-Stiftung Zürich,188,813
+C,Stadt Zürich,Sicherheitsdepartement,Alle,366,252
+C01,Stadt Zürich,Sicherheitsdepartement,Departementssekretariat,366,315
+C02,Stadt Zürich,Sicherheitsdepartement,Stadtpolizei,366,370
+C03,Stadt Zürich,Sicherheitsdepartement,Schutz und Rettung Zürich,366,426
+C04,Stadt Zürich,Sicherheitsdepartement,Dienstabteilung Verkehr,366,480
 C05,Stadt Zürich,Sicherheitsdepartement,Stadtrichteramt,366,537
-D,Stadt Zürich,Gesundheits- und Umweltdepartement,Alle,552,282
-D01,Stadt Zürich,Gesundheits- und Umweltdepartement,Departementssekretariat,552,333
-D02,Stadt Zürich,Gesundheits- und Umweltdepartement,Stadtspital Waid,552,385
-D03,Stadt Zürich,Gesundheits- und Umweltdepartement,Stadtspital Triemli,552,436
-D04,Stadt Zürich,Gesundheits- und Umweltdepartement,Pflegezentren der Stadt Zürich,552,485
-D05,Stadt Zürich,Gesundheits- und Umweltdepartement,Städtische Gesundheitsdienste,552,537
-D06,Stadt Zürich,Gesundheits- und Umweltdepartement,Alterszentren,552,587
-D07,Stadt Zürich,Gesundheits- und Umweltdepartement,Umwelt- und Gesundheitsschutz,552,638
-D08,Stadt Zürich,Gesundheits- und Umweltdepartement,Stiftung Alterswohnungen Stadt Zürich,552,689
-E,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Alle,728,282
-E01,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Departementssekretariat,728,333
-E02,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Tiefbauamt,728,385
-E03,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Entsorgung + Recycling Zürich,728,436
-E04,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Geomatik + Vermessung,728,485
-E05,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Grün Stadt Zürich,728,537
-F,Stadt Zürich,Hochbaudepartement,Alle,905,282
-F01,Stadt Zürich,Hochbaudepartement,Departementssekretariat,905,333
-F02,Stadt Zürich,Hochbaudepartement,Amt für Städtebau,905,385
-F03,Stadt Zürich,Hochbaudepartement,Amt für Hochbauten,905,436
-F04,Stadt Zürich,Hochbaudepartement,Immobilien,905,485
-F05,Stadt Zürich,Hochbaudepartement,Amt für Baubewilligungen,905,537
-G,Stadt Zürich,Departement der Industriellen Betriebe,Alle,1083,282
-G01,Stadt Zürich,Departement der Industriellen Betriebe,Departementssekretariat,1083,333
-G02,Stadt Zürich,Departement der Industriellen Betriebe,Wasserversorgung,1083,385
-G03,Stadt Zürich,Departement der Industriellen Betriebe,Elektrizitätswerk der Stadt Zürich,1083,436
-G04,Stadt Zürich,Departement der Industriellen Betriebe,Verkehrsbetriebe Zürich,1083,485
-G05,Stadt Zürich,Departement der Industriellen Betriebe,Energiebeauftragte/Energiebeauftragter,1083,537
-G06,Stadt Zürich,Departement der Industriellen Betriebe,Stiftung Behinderten-Transporte Zürich,1083,587
-H,Stadt Zürich,Schul- und Sportdepartement,Alle,1260,282
-H01,Stadt Zürich,Schul- und Sportdepartement,Departementssekretariat,1260,333
-H02,Stadt Zürich,Schul- und Sportdepartement,Schulamt,1260,385
-H03,Stadt Zürich,Schul- und Sportdepartement,Schulgesundheitsdienste,1260,436
-H04,Stadt Zürich,Schul- und Sportdepartement,Sportamt,1260,485
-H05,Stadt Zürich,Schul- und Sportdepartement,Fachschule Viventa,1260,537
-H06,Stadt Zürich,Schul- und Sportdepartement,Musikschule Konservatorium Zürich,1260,587
-I,Stadt Zürich,Sozialdepartement,Alle,1438,282
-I01,Stadt Zürich,Sozialdepartement,Departementssekretariat,1438,333
-I02,Stadt Zürich,Sozialdepartement,Support Sozialdepartement,1438,385
-I03,Stadt Zürich,Sozialdepartement,Laufbahnzentrum,1438,436
-I04,Stadt Zürich,Sozialdepartement,Soziale Einrichtungen und Betriebe,1438,485
-I05,Stadt Zürich,Sozialdepartement,Amt für Zusatzleistungen zur AHV/IV,1438,537
-I06,Stadt Zürich,Sozialdepartement,Soziale Dienste,1438,587
-I07,Stadt Zürich,Sozialdepartement,Kindes- und Erwachsenenschutzbehörde,1438,638
-I08,Stadt Zürich,Sozialdepartement,Asylorganisation der Stadt Zürich,1438,689
+D,Stadt Zürich,Gesundheits- und Umweltdepartement,Alle,542,252
+D01,Stadt Zürich,Gesundheits- und Umweltdepartement,Departementssekretariat,542,315
+D02,Stadt Zürich,Gesundheits- und Umweltdepartement,Stadtspital,542,370
+D03,Stadt Zürich,Gesundheits- und Umweltdepartement,Gesundheitszentren für das Alter,542,426
+D04,Stadt Zürich,Gesundheits- und Umweltdepartement,Städtische Gesundheitsdienste,542,480
+D05,Stadt Zürich,Gesundheits- und Umweltdepartement,Umwelt- und Gesundheitsschutz,542,537
+D06,Stadt Zürich,Gesundheits- und Umweltdepartement,Stiftung Alterswohnungen der Stadt Zürich,542,592
+E,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Alle,718,252
+E01,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Departementssekretariat,718,315
+E02,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Tiefbauamt,718,370
+E03,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Entsorgung + Recycling Zürich,718,426
+E04,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Geomatik + Vermessung,718,480
+E05,Stadt Zürich,Tiefbau- und Entsorgungsdepartement,Grün Stadt Zürich,718,537
+F,Stadt Zürich,Hochbaudepartement,Alle,897,252
+F01,Stadt Zürich,Hochbaudepartement,Departementssekretariat,897,315
+F02,Stadt Zürich,Hochbaudepartement,Amt für Städtebau,897,370
+F03,Stadt Zürich,Hochbaudepartement,Amt für Hochbauten,897,426
+F04,Stadt Zürich,Hochbaudepartement,Immobilien,897,480
+F05,Stadt Zürich,Hochbaudepartement,Amt für Baubewilligungen,897,537
+G,Stadt Zürich,Departement der Industriellen Betriebe,Alle,1075,252
+G01,Stadt Zürich,Departement der Industriellen Betriebe,Departementssekretariat,1075,315
+G02,Stadt Zürich,Departement der Industriellen Betriebe,Wasserversorgung,1075,370
+G03,Stadt Zürich,Departement der Industriellen Betriebe,Elektrizitätswerk der Stadt Zürich,1075,426
+G04,Stadt Zürich,Departement der Industriellen Betriebe,Verkehrsbetriebe Zürich,1075,480
+G05,Stadt Zürich,Departement der Industriellen Betriebe,Energiebeauftragte/Energiebeauftragter,1075,537
+G06,Stadt Zürich,Departement der Industriellen Betriebe,Geschäftsstelle Wärme Zürich,1075,592
+G07,Stadt Zürich,Departement der Industriellen Betriebe,Stiftung Behinderten-Transporte Zürich,1075,648
+H,Stadt Zürich,Schul- und Sportdepartement,Alle,1252,252
+H01,Stadt Zürich,Schul- und Sportdepartement,Departementssekretariat,1252,315
+H02,Stadt Zürich,Schul- und Sportdepartement,Schulamt,1252,370
+H03,Stadt Zürich,Schul- und Sportdepartement,Schulgesundheitsdienste,1252,426
+H04,Stadt Zürich,Schul- und Sportdepartement,Sportamt,1252,480
+H05,Stadt Zürich,Schul- und Sportdepartement,Fachschule Viventa,1252,537
+H06,Stadt Zürich,Schul- und Sportdepartement,Musikschule Konservatorium Zürich,1252,592
+I,Stadt Zürich,Sozialdepartement,Alle,1430,252
+I01,Stadt Zürich,Sozialdepartement,Departementssekretariat,1430,315
+I02,Stadt Zürich,Sozialdepartement,Support Sozialdepartement,1430,370
+I03,Stadt Zürich,Sozialdepartement,Laufbahnzentrum,1430,426
+I04,Stadt Zürich,Sozialdepartement,Soziale Einrichtungen und Betriebe,1430,480
+I05,Stadt Zürich,Sozialdepartement,Amt für Zusatzleistungen zur AHV/IV,1430,537
+I06,Stadt Zürich,Sozialdepartement,Soziale Dienste,1430,592
+I07,Stadt Zürich,Sozialdepartement,Kindes- und Erwachsenenschutzbehörde,1430,648
+I08,Stadt Zürich,Sozialdepartement,Asylorganisation der Stadt Zürich,1430,704
 J,Stadt Zürich,Allgemeine Verwaltung,Alle,-100,-100
 J01,Stadt Zürich,Allgemeine Verwaltung,Stadtkanzlei,-100,-100
 J02,Stadt Zürich,Allgemeine Verwaltung,Rechtskonsulent,-100,-100
