@@ -116,12 +116,12 @@ data_list_org2["deptkey"] = data_list_org2.nrkey.str.slice(stop=1)
 data_list_org2["count"] = 1
 
 # Aggregate results and rename and remove pivot-index for later join with pixel-positions
-data_report_dept = pd.pivot_table(data_list_org2,index=["deptkey"],values=["count"],aggfunc=np.sum)
+data_report_dept = pd.pivot_table(data_list_org2,index=["deptkey"],values=["count"],aggfunc="sum")
 data_report_dept.index.names = ['Nr']
 data_report_dept["type"] = "department"
 data_report_dept = data_report_dept.rename_axis(None, axis=1).reset_index() 
 
-data_report_da = pd.pivot_table(data_list_org2,index=["nrkey"],values=["count"],aggfunc=np.sum)
+data_report_da = pd.pivot_table(data_list_org2,index=["nrkey"],values=["count"],aggfunc="sum")
 data_report_da.index.names = ['Nr']
 data_report_da = data_report_da.rename_axis(None, axis=1).reset_index() 
 
@@ -136,6 +136,7 @@ data_pixel_report.rename(columns={'count': 'countDA'}, inplace=True)
 
 # PHASE 4: CREATE REPORT
 # Create report by overlaying text on an existing org-chart image
+# Create report by overlaying text on an existing org-chart image
 img = Image.open(image_in)
 draw = ImageDraw.Draw(img)
 
@@ -145,23 +146,28 @@ if error and show_error:
     draw.text((0, 0), message, (255, 0, 0), font=font_state)
 
 for index, row in data_pixel_report.iterrows():
-    if row["type"]=="department":
+    if row["type"] == "department":
         if pd.isnull(row["countDept"]):
             text = "0"
         else:
             text = str(int(row["countDept"]))
-        text_width, text_height = draw.textsize(text, font_dept)
-        xCoord = row["xPixel"]+box_width-text_width-padding_right_dept
-        yCoord = row["yPixel"]+padding_top_dept
-        draw.text((xCoord, yCoord), text, (0, 0, 0), font=font_dept)        
+        bbox = font_dept.getbbox(text)
+        text_width = bbox[2] - bbox[0]
+        text_height = bbox[3] - bbox[1]
+        xCoord = row["xPixel"] + box_width - text_width - padding_right_dept
+        yCoord = row["yPixel"] + padding_top_dept
+        draw.text((xCoord, yCoord), text, (0, 0, 0), font=font_dept)
     else:
         if pd.isnull(row["countDA"]):
             text = "0"
         else:
             text = str(int(row["countDA"]))
-        text_width, text_height = draw.textsize(text, font_da)
-        xCoord = row["xPixel"]+box_width-text_width-padding_right_da
-        yCoord = row["yPixel"]+padding_top_da
+        bbox = font_da.getbbox(text)
+        text_width = bbox[2] - bbox[0]
+        text_height = bbox[3] - bbox[1]
+        xCoord = row["xPixel"] + box_width - text_width - padding_right_da
+        yCoord = row["yPixel"] + padding_top_da
         draw.text((xCoord, yCoord), text, (0, 0, 0), font=font_da)
+
 img.save(image_out)
 
